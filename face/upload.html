@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>測一測</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/face.css" />
+	</head>
+	<body>
+		<div class="main pure-grey">
+			<div class="error-dialog">
+				<div class="title">無法判讀</div>
+				<div class="body">
+					<p class="text-center my-4">拍攝畫面不清晰,請再測一次:)</p>
+					<a href="#" class="lt-btn lt-btn-round">再測一次</a>
+                </div>
+                <a href="#" class="link-close">
+                    <img class="img-fluid" src="../static/image/icon-close-white-32.png" alt="">
+                </a>
+			</div>
+		</div>
+		<footer>
+			<a href="#" class="link-tab active">
+				<img class="img-fluid" src="../static/image/icon-home-32.png" alt="" />
+				<img class="img-fluid" src="../static/image/icon-home-active-32.png" alt="" />
+				<span>首頁</span>
+			</a>
+			<a href="#" class="link-tab">
+				<img class="img-fluid" src="../static/image/icon-cart-32.png" alt="" />
+				<img class="img-fluid" src="../static/image/icon-cart-active-32.png" alt="" />
+				<span>購物車</span>
+			</a>
+			<a href="#" class="link-tab">
+				<img class="img-fluid" src="../static/image/icon-scan-32.png" alt="" />
+				<img class="img-fluid" src="../static/image/icon-scan-active-32.png" alt="" />
+				<span>測一測</span>
+			</a>
+			<a href="#" class="link-tab">
+				<img class="img-fluid" src="../static/image/icon-chat-32.png" alt="" />
+				<img class="img-fluid" src="../static/image/icon-chat-active-32.png" alt="" />
+				<span>話題</span>
+			</a>
+			<a href="#" class="link-tab">
+				<img class="img-fluid" src="../static/image/icon-member-32.png" alt="" />
+				<img class="img-fluid" src="../static/image/icon-member-active-32.png" alt="" />
+				<span>會員專區</span>
+			</a>
+		</footer>
+
+		<!-- 提示 start -->
+		<div class="modal fade tip-modal" id="tipModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">檢測前小提醒</div>
+					</div>
+					<div class="modal-body">
+						<p class="text-center my-4">檢測前請先將臉洗淨並擦乾,才能測出最真實的數值:)</p>
+						<a href="#" class="lt-btn lt-btn-round" data-dismiss="modal">我知道了</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提示 end -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$('.link-tab').on('click', function() {
+					$(this)
+						.siblings()
+						.removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>測一測</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/face.css" />
+	</head>
+	<body>
+		<nav class="nav nav-actions nav-between">
+			<a href="#" class="action">
+				<img class="img-fluid" src="../static/image/icon-close-32.png" alt="" />
+			</a>
+			<a href="#" class="action">
+				<img class="img-fluid" src="../static/image/icon-camera-32.png" alt="" />
+			</a>
+		</nav>
+		<div class="main scanning">
+			<div class="toggle-switch">
+				<input type="checkbox" id="switch" />
+				<label for="switch"></label>
+				<span>語音導覽</span>
+			</div>
+			<div class="circle show">
+				<div class="wave1"></div>
+				<div class="wave2"></div>
+				<div class="wave3"></div>
+			</div>
+			<div class="bottom-tip">
+				<p>&bull; 請確認鏡頭清晰無灰塵</p>
+				<p>&bull; 請依照指示調整與鏡頭的距離</p>
+				<p>&bull; 點撃測試時請穩定鏡頭避免搖晃</p>
+				<a href="#" class="lt-btn lt-btn-round">開始測試</a>
+			</div>
+		</div>
+
+		<!-- 提示 start -->
+		<div class="modal fade tip-modal" id="tipModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">檢測前小提醒</div>
+					</div>
+					<div class="modal-body">
+						<p class="text-center my-4">檢測前請先將臉洗淨並擦乾,才能測出最真實的數值:)</p>
+						<a href="#" class="lt-btn lt-btn-round" data-dismiss="modal">我知道了</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提示 end -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				document.querySelector('.circle').addEventListener('animationend', function() {
+					$('#tipModal').modal('show');
+					$('.circle').toggleClass('show');
+				});
+			});
+		</script>
+	</body>
+</html>
