@@ -186,6 +186,29 @@ footer .link-tab span {
   color: #8b8b8b;
 }
 
+.toaster {
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 120px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  font-size: 1.6rem;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.toaster.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .rect-auto, .percentage-circle.p51 .slice, .percentage-circle.p52 .slice, .percentage-circle.p53 .slice, .percentage-circle.p54 .slice, .percentage-circle.p55 .slice, .percentage-circle.p56 .slice, .percentage-circle.p57 .slice, .percentage-circle.p58 .slice, .percentage-circle.p59 .slice, .percentage-circle.p60 .slice, .percentage-circle.p61 .slice, .percentage-circle.p62 .slice, .percentage-circle.p63 .slice, .percentage-circle.p64 .slice, .percentage-circle.p65 .slice, .percentage-circle.p66 .slice, .percentage-circle.p67 .slice, .percentage-circle.p68 .slice, .percentage-circle.p69 .slice, .percentage-circle.p70 .slice, .percentage-circle.p71 .slice, .percentage-circle.p72 .slice, .percentage-circle.p73 .slice, .percentage-circle.p74 .slice, .percentage-circle.p75 .slice, .percentage-circle.p76 .slice, .percentage-circle.p77 .slice, .percentage-circle.p78 .slice, .percentage-circle.p79 .slice, .percentage-circle.p80 .slice, .percentage-circle.p81 .slice, .percentage-circle.p82 .slice, .percentage-circle.p83 .slice, .percentage-circle.p84 .slice, .percentage-circle.p85 .slice, .percentage-circle.p86 .slice, .percentage-circle.p87 .slice, .percentage-circle.p88 .slice, .percentage-circle.p89 .slice, .percentage-circle.p90 .slice, .percentage-circle.p91 .slice, .percentage-circle.p92 .slice, .percentage-circle.p93 .slice, .percentage-circle.p94 .slice, .percentage-circle.p95 .slice, .percentage-circle.p96 .slice, .percentage-circle.p97 .slice, .percentage-circle.p98 .slice, .percentage-circle.p99 .slice, .percentage-circle.p100 .slice {
   clip: rect(auto, auto, auto, auto);
 }
@@ -460,6 +483,11 @@ body.pure-blue {
 
 .result-card h2 {
   font-weight: 700;
+  font-size: 2rem;
+}
+
+.result-card h3 {
+  font-size: 1.6rem;
 }
 
 .result-card .percentage-row {
@@ -476,6 +504,153 @@ body.pure-blue {
   font-size: 1.2rem;
 }
 
+.result-card .percentage-row .count {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7636ff;
+}
+
+.result-card .percentage-row .col-4 {
+  text-align: center;
+}
+
+.result-card .percentage-row .col-4 .icon-acne {
+  max-width: 80px;
+}
+
+.result-card .percentage-row .col-6 {
+  text-align: center;
+}
+
+.result-card .percentage-row .col-6 .icon-acne {
+  max-width: 120px;
+}
+
+.result-card .comment-list {
+  padding: 10px 15px;
+  background-color: #f2ebff;
+  border-radius: 10px;
+}
+
+.result-card .comment-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2e2e2e;
+  padding: 12px 0;
+}
+
+.result-card .comment-list li ~ li {
+  border-top: 1px solid #c6c2cd;
+}
+
+.result-card .comment-list .subject {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.result-card .face1 {
+  position: relative;
+  height: 0;
+  padding-top: 49.64953%;
+  background-image: url("../image/face1.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.result-card .rating-wrap {
+  position: absolute;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.result-card .rating-wrap .name {
+  color: #2e2e2e;
+  font-size: 1.2rem;
+}
+
+.result-card .rating-wrap .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 4px 0;
+}
+
+.result-card .rating-wrap .rating .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7636ff;
+  margin: 0 2px;
+}
+
+.result-card .rating-wrap .rating .dot.active ~ .dot {
+  background-color: #f2ebff;
+}
+
+.result-card .rating-wrap .score {
+  color: #7636ff;
+  font-size: 1.2rem;
+}
+
+.result-card .rating-wrap.left-top {
+  left: -10px;
+  top: 0;
+}
+
+.result-card .rating-wrap.left-bottom {
+  left: -10px;
+  bottom: 0;
+}
+
+.result-card .rating-wrap.right-top {
+  right: 0;
+  top: 10%;
+}
+
+.result-card .rating-wrap.right-bottom {
+  right: 0;
+  bottom: -10%;
+}
+
+@media (min-width: 375px) {
+  .result-card .rating-wrap.left-top {
+    left: -10px;
+    top: 5%;
+  }
+  .result-card .rating-wrap.left-bottom {
+    left: -10px;
+    bottom: 5%;
+  }
+  .result-card .rating-wrap.right-top {
+    right: 0;
+    top: 20%;
+  }
+  .result-card .rating-wrap.right-bottom {
+    right: 0;
+    bottom: -5%;
+  }
+}
+
 .percentage-circle {
   display: inline-block;
   position: relative;
@@ -484,6 +659,10 @@ body.pure-blue {
   height: 1em;
   border-radius: 50%;
   background-color: #f5f5f5;
+}
+
+.percentage-circle.sm {
+  font-size: 80px;
 }
 
 .percentage-circle *,

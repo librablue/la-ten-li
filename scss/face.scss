@@ -232,6 +232,10 @@ body {
 	margin: 20px 0;
 	h2 {
 		font-weight: 700;
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.6rem;
 	}
 	.percentage-row {
 		margin: 30px 0;
@@ -242,6 +246,123 @@ body {
 			margin-top: 6px;
 			color: #9d9d9d;
 			font-size: 1.2rem;
+		}
+		.count {
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: #7636ff;
+		}
+		.col-4 {
+			text-align: center;
+			.icon-acne {
+				max-width: 80px;
+			}
+		}
+		.col-6 {
+			text-align: center;
+			.icon-acne {
+				max-width: 120px;
+			}
+		}
+	}
+	.comment-list {
+		padding: 10px 15px;
+		background-color: #f2ebff;
+		border-radius: 10px;
+		li {
+			display: flex;
+			align-items: center;
+			color: #2e2e2e;
+			padding: 12px 0;
+			& ~ li {
+				border-top: 1px solid #c6c2cd;
+			}
+		}
+		.subject {
+			display: inline-block;
+			margin-right: 4px;
+		}
+	}
+	.face1 {
+		position: relative;
+		height: 0;
+		padding-top: 425 / 856 * 100%;
+		background-image: url('../image/face1.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.rating-wrap {
+		position: absolute;
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		.name {
+			color: #2e2e2e;
+			font-size: 1.2rem;
+		}
+		.rating {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 80%;
+			margin: 4px 0;
+			.dot {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: #7636ff;
+				margin: 0 2px;
+				&.active {
+					& ~ .dot {
+						background-color: #f2ebff;
+					}
+				}
+			}
+		}
+		.score {
+			color: #7636ff;
+			font-size: 1.2rem;
+		}
+		&.left-top {
+			left: -10px;
+			top: 0;
+		}
+		&.left-bottom {
+			left: -10px;
+			bottom: 0;
+		}
+		&.right-top {
+			right: 0;
+			top: 10%;
+		}
+		&.right-bottom {
+			right: 0;
+			bottom: -10%;
+		}
+	}
+}
+
+@media (min-width: 375px) {
+	.result-card {
+		.rating-wrap {
+			&.left-top {
+				left: -10px;
+				top: 5%;
+			}
+			&.left-bottom {
+				left: -10px;
+				bottom: 5%;
+			}
+			&.right-top {
+				right: 0;
+				top: 20%;
+			}
+			&.right-bottom {
+				right: 0;
+				bottom: -5%;
+			}
 		}
 	}
 }
@@ -254,6 +375,9 @@ body {
 	height: 1em;
 	border-radius: 50%;
 	background-color: #f5f5f5;
+	&.sm {
+		font-size: 80px;
+	}
 	*,
 	*:before,
 	*:after {
