@@ -490,24 +490,24 @@ body.pure-blue {
   font-size: 1.6rem;
 }
 
+.result-card .highlight {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #7636ff;
+}
+
+.result-card .label {
+  margin-top: 6px;
+  color: #9d9d9d;
+  font-size: 1.2rem;
+}
+
 .result-card .percentage-row {
   margin: 30px 0;
 }
 
 .result-card .percentage-row > * {
   text-align: center;
-}
-
-.result-card .percentage-row .label {
-  margin-top: 6px;
-  color: #9d9d9d;
-  font-size: 1.2rem;
-}
-
-.result-card .percentage-row .count {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #7636ff;
 }
 
 .result-card .percentage-row .col-4 {
@@ -632,6 +632,155 @@ body.pure-blue {
   bottom: -10%;
 }
 
+.result-card .acne2-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 16px 0;
+}
+
+.result-card .acne2-row .icon-acne2 {
+  max-width: 20%;
+  margin-right: 10px;
+}
+
+.result-card .acne2-level-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.result-card .acne2-level-row .level-item:first-child {
+  color: #999;
+}
+
+.result-card .acne2-level-row .level-item:last-child {
+  color: #ec5a55;
+}
+
+.result-card .acne2-level-row .level-item {
+  width: 40px;
+  font-size: 1.4rem;
+  line-height: 32px;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.result-card .acne2-level-row .level-item.active .level-color {
+  position: relative;
+}
+
+.result-card .acne2-level-row .level-item.active .level-color:after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #7636ff;
+  border-radius: 50%;
+}
+
+.result-card .acne2-level-row .level-item .level-color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.result-card .acne2-level-row .level-item .text {
+  position: relative;
+  margin-top: 18px;
+  font-size: 1.2rem;
+}
+
+.result-card .acne2-level-row .level-item .text:before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: inherit;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(2) {
+  color: #ffead0;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(2) .level-color {
+  background-color: #ffead0;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(3) {
+  color: #ffdbc3;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(3) .level-color {
+  background-color: #ffdbc3;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(4) {
+  color: #ffbca8;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(4) .level-color {
+  background-color: #ffbca8;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(5) {
+  color: #ff9485;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(5) .level-color {
+  background-color: #ff9485;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(6) {
+  color: #ec5a55;
+}
+
+.result-card .acne2-level-row .level-item:nth-child(6) .level-color {
+  background-color: #ec5a55;
+}
+
+.result-card .color-pill {
+  width: 40%;
+  height: 10px;
+  border-radius: 20px;
+}
+
+.result-card .color-pill.purple {
+  background-color: #6b44ae;
+}
+
+.result-card .color-pill.skin {
+  background-color: #f5bd93;
+}
+
+.result-card .color-pill.red {
+  background-color: #e26f6f;
+}
+
+.result-card .color-pill.blue {
+  background-color: #6193c8;
+}
+
 @media (min-width: 375px) {
   .result-card .rating-wrap.left-top {
     left: -10px;
@@ -663,6 +812,42 @@ body.pure-blue {
 
 .percentage-circle.sm {
   font-size: 80px;
+}
+
+.percentage-circle.purple > span {
+  color: #6b44ae;
+}
+
+.percentage-circle.purple .bar,
+.percentage-circle.purple .fill {
+  border-color: #6b44ae;
+}
+
+.percentage-circle.skin > span {
+  color: #f5bd93;
+}
+
+.percentage-circle.skin .bar,
+.percentage-circle.skin .fill {
+  border-color: #f5bd93;
+}
+
+.percentage-circle.red > span {
+  color: #e26f6f;
+}
+
+.percentage-circle.red .bar,
+.percentage-circle.red .fill {
+  border-color: #e26f6f;
+}
+
+.percentage-circle.blue > span {
+  color: #6193c8;
+}
+
+.percentage-circle.blue .bar,
+.percentage-circle.blue .fill {
+  border-color: #6193c8;
 }
 
 .percentage-circle *,

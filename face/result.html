@@ -37,6 +37,7 @@
 			<li><a href="#" class="nav-item">棕色斑</a></li>
 		</ul>
 		<div class="main container">
+			<!-- 臉部特徵 start -->
 			<div class="result-card">
 				<h2>我的臉部特徵</h2>
 				<div class="row percentage-row">
@@ -72,6 +73,9 @@
 					</li>
 				</ul>
 			</div>
+			<!-- 臉部特徵 end -->
+
+			<!-- 水份狀態 start -->
 			<div class="result-card">
 				<h2>水份狀態</h2>
 				<div class="row percentage-row">
@@ -144,13 +148,16 @@
 					</div>
 				</div>
 			</div>
+			<!-- 水份狀態 end -->
+
+			<!-- 黑頭狀態 start -->
 			<div class="result-card">
 				<h2>黑頭狀態</h2>
 				<div class="row percentage-row">
 					<div class="col-4">
-						<img class="icon-acne" src="../static/image/acne.png" alt="">
+						<img class="icon-acne" src="../static/image/acne.png" alt="" />
 						<div class="label">黑頭數量</div>
-						<div class="count">18</div>
+						<div class="highlight">18</div>
 					</div>
 					<div class="col-4">
 						<div class="percentage-circle sm p20">
@@ -173,17 +180,215 @@
 						<div class="label">黑頭分數</div>
 					</div>
 				</div>
-				<ul class="comment-list">
-					<li>
-						<span class="subject">膚質:</span>
-						<div class="content">油性肌膚,皮膚看上去不夠光滑,輕度敏感。</div>
-					</li>
-					<li>
-						<span class="subject">問題:</span>
-						<div class="content">最近有重度黑頭問題,毛孔比較粗大。</div>
-					</li>
-				</ul>
+				<h3>黑頭嚴重程度</h3>
+				<div class="acne2-row">
+					<img class="icon-acne2" src="../static/image/acne2.png" alt="" />
+					<div>
+						<div class="label">黑頭嚴重程度</div>
+						<div class="highlight text-center">中度</div>
+					</div>
+				</div>
+				<div class="acne2-level-row">
+					<div class="level-item">無</div>
+					<div class="level-item">
+						<div class="level-color"></div>
+					</div>
+					<div class="level-item">
+						<div class="level-color"></div>
+						<div class="text">輕度</div>
+					</div>
+					<div class="level-item">
+						<div class="level-color"></div>
+					</div>
+					<div class="level-item active">
+						<div class="level-color"></div>
+						<div class="text">中度</div>
+					</div>
+					<div class="level-item">
+						<div class="level-color"></div>
+					</div>
+					<div class="level-item">嚴重</div>
+				</div>
 			</div>
+			<!-- 黑頭狀態 end -->
+
+			<!-- 黑眼圈狀態 start -->
+			<div class="result-card">
+				<h2>黑眼圈狀態</h2>
+				<div class="row justify-content-center percentage-row">
+					<div class="col-4">
+						<div class="percentage-circle sm p26">
+							<span>26</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">黑眼圈分數</div>
+					</div>
+				</div>
+				<h3 class="my-4">黑眼圈類型</h3>
+				<div class="row align-items-center">
+					<div class="col-6">
+						<img class="img-fluid" src="../static/image/dartcircle.png" alt="" />
+					</div>
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6 pr-0 mb-3">
+								<div class="color-pill purple"></div>
+								<div class="label">混合型</div>
+							</div>
+							<div class="col-6 pl-0 mb-3">
+								<div class="color-pill skin"></div>
+								<div class="label">色素型</div>
+							</div>
+							<div class="col-6 pr-0">
+								<div class="color-pill red"></div>
+								<div class="label">血管型</div>
+							</div>
+							<div class="col-6 pl-0">
+								<div class="color-pill blue"></div>
+								<div class="label">陰影型</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 class="my-4">黑眼圈嚴重程度</h3>
+				<div class="row">
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle purple sm p25">
+							<span>輕度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">混合型</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle skin sm p25">
+							<span>輕度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">色素型</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle red sm p75">
+							<span>中度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">血管型</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle blue sm p95">
+							<span>嚴重</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">陰影型</div>
+					</div>
+				</div>
+			</div>
+			<!-- 黑眼圈狀態 end -->
+
+			<!-- 斑點狀態 start -->
+			<div class="result-card">
+				<h2>斑點狀態</h2>
+				<div class="row justify-content-center percentage-row">
+					<div class="col-6">
+                        <img style="max-width:120px" src="../static/image/acne.png" alt="">
+                        <div class="label">黑頭數量</div>
+					</div>
+					<div class="col-6">
+						<div class="percentage-circle p75">
+							<span>75</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">斑點分數</div>
+					</div>
+				</div>
+				<h3 class="my-4">斑點分類</h3>
+				<div class="row align-items-center">
+					<div class="col-6 text-center pr-0">
+						<img style="max-width:100px" src="../static/image/spot.png" alt="" />
+					</div>
+					<div class="col-6 p-0">
+						<div class="row">
+							<div class="col-6 pr-0 mb-3">
+								<div class="color-pill purple"></div>
+								<div class="label">痣</div>
+							</div>
+							<div class="col-6 pl-0 mb-3">
+								<div class="color-pill skin"></div>
+								<div class="label">雀斑</div>
+							</div>
+							<div class="col-6 pr-0">
+								<div class="color-pill red"></div>
+								<div class="label">黃褐斑</div>
+							</div>
+							<div class="col-6 pl-0">
+								<div class="color-pill blue"></div>
+								<div class="label">其他斑</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 class="my-4">黑眼圈嚴重程度</h3>
+				<div class="row">
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle purple sm p25">
+							<span>輕度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">痣</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle skin sm p25">
+							<span>輕度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">雀斑</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle red sm p75">
+							<span>中度</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">黃褐斑</div>
+					</div>
+					<div class="col-3 text-center p-0">
+						<div class="percentage-circle blue sm p95">
+							<span>嚴重</span>
+							<div class="slice">
+								<div class="bar"></div>
+								<div class="fill"></div>
+							</div>
+						</div>
+						<div class="label">其他斑</div>
+					</div>
+				</div>
+			</div>
+			<!-- 斑點狀態 end -->
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
